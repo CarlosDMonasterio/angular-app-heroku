@@ -8,7 +8,7 @@ const app = express();
 app.use(express.static('./dist/infiniti-test'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'dist/infiniti-test/'}),
+    res.sendFile('index.html', {root: 'infiniti-test/'}),
 );
 
 // Start the app by listening on the default Heroku port
