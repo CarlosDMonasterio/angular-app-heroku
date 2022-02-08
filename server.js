@@ -5,10 +5,10 @@ const path = require('path');
 const app = express();
 
 // Serve only the static files form the dist directory
-app.use(express.static('./dist/infiniti-test'));
+app.use(express.static('./dist/angular-app-infiniti'));
 
 app.get('/*', (req, res) =>
-    res.sendFile('index.html', {root: 'infiniti-test/'}),
+    res.sendFile('index.html', {root: 'dist/angular-app-infiniti/'}),
 );
 
 // Start the app by listening on the default Heroku port
